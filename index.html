@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080807">
+  <title>For Nandani Jii ♛</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+  <div class="gold-dust" aria-hidden="true"></div>
+  <div id="heartsLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#" class="brand" id="brandLink">♛ N · A GOLDEN WISH</a>
+    <div class="top-actions">
+      <span id="slideCounter">01 / 03</span>
+      <button id="autoBtn" class="mini-button">Ⅱ Auto</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SLIDE 1: ROYAL ENVELOPE -->
+    <section class="slide active" id="slide1"
+      aria-label="Royal invitation">
+      <div class="hero-content">
+        <p class="eyebrow">A SPECIAL INVITATION · SEALED WITH LOVE</p>
+
+        <div class="envelope-scene">
+          <button id="envelopeBtn" class="envelope-button"
+            aria-label="Open Nandani jii's birthday envelope">
+            <span class="envelope">
+              <span class="envelope-flap"></span>
+              <span class="envelope-body"></span>
+              <span class="envelope-letter">For Nandani jii ♡</span>
+              <span class="wax-seal">N</span>
+            </span>
+          </button>
+          <p class="hint" id="envelopeHint">Tap the royal seal to open ♡</p>
+        </div>
+
+        <p class="eyebrow">A DAY AS BEAUTIFUL AS YOU</p>
+        <h1>Happy Birthday,<br>
+          <span class="gold-text">Nandani jii.</span>
+        </h1>
+        <p class="hero-text">
+          Some people deserve more than ordinary wishes.
+          This little universe was created just for you. ✨
+        </p>
+
+        <button id="enterBtn" class="gold-button" disabled>
+          Open Your Universe ♛
+        </button>
+        <p class="hint">A little magic is waiting inside.</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: GALLERY, LETTER, MUSIC -->
+    <section class="slide" id="slide2"
+      aria-label="Memories and letter" aria-hidden="true" inert>
+      <div class="slide-content">
+        <div class="section-heading">
+          <p class="eyebrow">CHAPTER II · THE PRECIOUS MOMENTS</p>
+          <h2>Memories in <span class="gold-text">Gold.</span></h2>
+          <p>Every little moment deserves a place in our hearts.</p>
+        </div>
+
+        <section class="luxury-card" id="memories">
+          <h2>Our Little Gallery ✨</h2>
+          <p class="muted">Tap any picture to see it in full size.</p>
+
+          <div class="gallery">
+            <button class="photo" data-photo="0" aria-label="View memory 1">
+              <img src="img 1.jpeg" alt="Memory 1" loading="lazy">
+              <span>Memory I</span>
+            </button>
+            <button class="photo" data-photo="1" aria-label="View memory 2">
+              <img src="img 2.jpeg" alt="Memory 2" loading="lazy">
+              <span>Memory II</span>
+            </button>
+            <button class="photo" data-photo="2" aria-label="View memory 3">
+              <img src="img 3.jpeg" alt="Memory 3" loading="lazy">
+              <span>Memory III</span>
+            </button>
+            <button class="photo" data-photo="3" aria-label="View memory 4">
+              <img src="img 4.jpeg" alt="Memory 4" loading="lazy">
+              <span>Memory IV</span>
+            </button>
+            <button class="photo" data-photo="4" aria-label="View memory 5">
+              <img src="img 5.jpeg" alt="Memory 5" loading="lazy">
+              <span>Memory V</span>
+            </button>
+            <button class="photo" data-photo="5" aria-label="View memory 6">
+              <img src="img 6.jpeg" alt="Memory 6" loading="lazy">
+              <span>Memory VI</span>
+            </button>
+            <button class="photo" data-photo="6" aria-label="View memory 7">
+              <img src="img 7.jpeg" alt="Memory 7" loading="lazy">
+              <span>Memory VII</span>
+            </button>
+            <button class="photo" data-photo="7" aria-label="View memory 8">
+              <img src="img 8.jpeg" alt="Memory 8" loading="lazy">
+              <span>Memory VIII</span>
+            </button>
+            <button class="photo" data-photo="8" aria-label="View memory 9">
+              <img src="img9.jpeg" alt="Memory 9" loading="lazy">
+              <span>Memory IX</span>
+            </button>
+            <button class="photo" data-photo="9" aria-label="View memory 10">
+              <img src="img 10.jpeg" alt="Memory 10" loading="lazy">
+              <span>Memory X</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="luxury-card" id="letter">
+          <p class="eyebrow">A PRIVATE NOTE</p>
+          <h2>A Letter for You 💌</h2>
+          <p class="muted">Some feelings are best written from the heart.</p>
+          <button id="letterBtn" class="outline-button">
+            Unseal Your Letter ♡
+          </button>
+
+          <article id="letterContent" class="letter-paper hidden">
+            <p class="letter-heading">Dear Nandani jii,</p>
+            <p>
+              Today is a beautiful reminder that someone as special
+              as you deserves all the happiness this world can offer.
+            </p>
+            <p>
+              May your days be filled with peaceful moments,
+              genuine smiles, unexpected blessings and dreams
+              that slowly turn into reality.
+            </p>
+            <p>
+              Never forget your worth, your beautiful spirit,
+              or the light you bring into the lives around you.
+            </p>
+            <p>
+              This little surprise may be made of pictures,
+              words and lights, but the wish behind it is sincere:
+              may life always give you reasons to smile. ✨
+            </p>
+            <p class="signature">With warm wishes, just for you. ♡</p>
+          </article>
+        </section>
+
+        <section class="luxury-card" id="music">
+          <p class="eyebrow">YOUR PERSONAL SOUNDTRACK</p>
+          <h2>A Melody for You 🎵</h2>
+          <p class="muted">A little music makes the moment feel magical.</p>
+
+          <audio id="birthdaySong" loop preload="metadata">
+            <source src="audio 1.mpeg" type="audio/mpeg">
+          </audio>
+
+          <button id="musicBtn" class="outline-button">
+            ▶ Play Our Song
+          </button>
+          <p id="musicStatus" class="hint" aria-live="polite">
+            Your melody is waiting.
+          </p>
+        </section>
+
+        <button class="gold-button next-chapter" data-go="2">
+          Enter the Grand Finale →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: COUNTDOWN AND FINALE -->
+    <section class="slide" id="slide3"
+      aria-label="Golden birthday finale" aria-hidden="true" inert>
+      <div class="slide-content finale-content">
+        <p class="eyebrow">CHAPTER III · A WISH IN GOLD</p>
+        <div class="crown">♛</div>
+
+        <h2>A Golden Moment<br>
+          <span class="gold-text">For Nandani jii.</span>
+        </h2>
+
+        <p class="hero-text">
+          Every new year brings another chance to shine.
+          Here's to all the beautiful things waiting for you. 🖤
+        </p>
+
+        <section class="luxury-card countdown-card">
+          <p class="eyebrow" id="countdownHeading">COUNTING DOWN TO YOUR DAY</p>
+          <div id="countdown" class="countdown">
+            <div><strong id="days">--</strong><span>Days</span></div>
+            <div><strong id="hours">--</strong><span>Hours</span></div>
+            <div><strong id="minutes">--</strong><span>Minutes</span></div>
+            <div><strong id="seconds">--</strong><span>Seconds</span></div>
+          </div>
+          <p class="hint" id="countdownCaption">
+            Set the birthday date in script.js to personalize the countdown.
+          </p>
+        </section>
+
+        <button id="fireworksBtn" class="gold-button">
+          Make a Wish ✨
+        </button>
+        <p id="wishMessage" class="wish-message" aria-live="polite"></p>
+
+        <section class="luxury-card grand-finale">
+          <p class="eyebrow">THE FINAL LITTLE SURPRISE</p>
+          <div class="birthday-cake">🎂</div>
+          <h2 id="finalTitle">Today, the stars shine for you.</h2>
+          <p class="muted">
+            May your life be rich in love, peaceful in spirit
+            and golden with beautiful memories.
+          </p>
+
+          <button id="revealBtn" class="outline-button">
+            Reveal Your Final Message ♡
+          </button>
+
+          <div id="finalNote" class="final-note hidden">
+            <div class="final-stars">✦ ✧ ✦</div>
+            <h2>Happy Birthday,<br>
+              <span class="gold-text">Nandani jii!</span>
+            </h2>
+            <p>
+              May every wish you make find its way to you.
+              Keep smiling, keep shining, and always remember
+              that you deserve beautiful things. ❤️
+            </p>
+            <p class="signature">Your special day. Your golden moment. ♡</p>
+          </div>
+        </section>
+
+        <button id="replayBtn" class="outline-button">
+          ↻ Relive the Magic
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Manual slideshow navigation -->
+  <nav class="slide-nav" aria-label="Slide navigation">
+    <button id="prevBtn" class="nav-button" disabled>← Back</button>
+    <div class="dots">
+      <button class="dot active" data-slide="0"
+        aria-label="Slide 1" aria-current="step"></button>
+      <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+    <button id="nextBtn" class="nav-button">Next →</button>
+  </nav>
+
+  <!-- Full-size photo viewer -->
+  <dialog id="photoViewer" class="photo-viewer">
+    <button id="closePhoto" class="close-viewer" aria-label="Close photo">×</button>
+    <button id="previousPhoto" class="photo-arrow" aria-label="Previous photo">‹</button>
+    <figure>
+      <img id="expandedPhoto" src="" alt="">
+      <figcaption id="photoCaption"></figcaption>
+    </figure>
+    <button id="nextPhoto" class="photo-arrow" aria-label="Next photo">›</button>
+  </dialog>
+
+  <footer>Crafted with golden wishes for Nandani jii ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
